@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
+<html lang="en" xmlns:tal="http://xml.zope.org/namespaces/tal">
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link href="/movienight.css" type="text/css" rel="stylesheet"/>
+
+    <header>
+        <h1>Jordy's Movie Night</h1>
+        <h2>Come and see the good stuff!</h2>
+    </header>
+
+    <article>
+        <h2 tal:content="self.sTitle">Movie Suggestions</h2>
+        <div tal:replace="self.sContent"></div>
+
+        <p tal:condition="true:self.bUser">
+            <span tal:content="self.oUser.fullName"></span>
+            <a tal:attributes="href self.oUrls.profile.uri">Edit my profile</a>
+            <a tal:attributes="href self.oUrls.logout.uri">Logout</a>
+        </p>
+        <p tal:condition="false:self.bUser">
+            <a tal:attributes="href self.oUrls.login.uri"> Login now</a>
+            <small>Don't have an account?
+                <a tal:attributes="href self.oUrls.register.uri">Register now</a>
+            </small>
+        </p>
+
+        <p tal:content="self.sRequest"></p>
+    </article>
+</html>
