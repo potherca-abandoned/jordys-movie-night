@@ -1,0 +1,74 @@
+/**
+ * Quick mockup for movie night CSS
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Codystar);
+@import url(http://fonts.googleapis.com/css?family=Ewert);
+@import url(http://fonts.googleapis.com/css?family=Monoton);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 98%;
+    width: 100%;
+}
+body {
+    background: no-repeat center center fixed;
+    background-image: url(/theatre-curtains-for-home-decoration.jpg);
+    background-size: cover;
+}
+
+header, article {
+    width: 80%;
+    margin: 1em auto;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Ewert', cursive;
+    letter-spacing: 0.25em;
+    color: black;
+    font-size: 3em;
+    text-shadow: 0 0 0.2em white, 0 0 0.1em red, 0 0 0.1em red;
+}
+
+header h2 {	font-family: 'Codystar', cursive;
+    color: yellow;
+    text-shadow: 0 0 0.1em white;
+}
+
+article {
+    background: #999;
+    background: linear-gradient(180deg, rgba(100%, 100%, 100%, 0.65),
+    rgba(100%, 100%, 100%, 0.15));
+    min-height: 10em;
+    border-radius: 0.35em;
+    padding: 0.01em;
+    border: 0.1em solid red;
+    box-shadow: 0 0 1em red;
+    max-width: 40em;
+}
+
+article h2 {
+    font-family: 'Monoton', cursive;
+    letter-spacing: 0.35em;
+    background: rgba(100%, 0%, 0%, 0.5);
+    text-shadow: 0 0 1em yellow;
+    color: white;
+    box-shadow: 0 0 3em red;
+}
+
+article ul {
+    margin: 0 auto;
+    min-width: 10em;
+    width: 40%;
+}
+
+article li {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    list-style: none;
+    text-shadow: 0 0 1em white;
+}
